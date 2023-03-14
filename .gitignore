@@ -3,3 +3,4 @@
 *.pyc
 venv/
 qsettings/
+# autoconfig.yml
