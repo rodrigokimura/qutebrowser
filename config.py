@@ -8,6 +8,11 @@ c.fonts.default_family = "Cascadia Code"
 c.fonts.default_size = "10pt"
 c.fonts.tabs.selected = f"bold {c.fonts.default_size} {c.fonts.default_family}"
 
+c.tabs.title.alignment = "center"
+c.tabs.title.format = "{audio}{current_title}"
+
+c.content.autoplay = False
+
 config.load_autoconfig(False)
 
 # Which cookies to accept. With QtWebEngine, this setting also controls
@@ -157,6 +162,9 @@ config.set(
     False,
     "https://outlook.office365.com?mailtouri=%25s",
 )
+config.set("content.media.video_capture", True, "https://meet.google.com")
+config.set("content.notifications.enabled", True, "https://meet.google.com")
+
 c.tabs.padding = {"bottom": 3, "left": 5, "right": 5, "top": 3}
 c.tabs.indicator.padding = {"bottom": 0, "left": 0, "right": 0, "top": 0}
 c.tabs.indicator.width = 0
