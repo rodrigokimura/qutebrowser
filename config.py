@@ -8,6 +8,8 @@ c.fonts.default_family = "Cascadia Code"
 c.fonts.default_size = "10pt"
 c.fonts.tabs.selected = f"bold {c.fonts.default_size} {c.fonts.default_family}"
 
+c.tabs.min_width = 100
+c.tabs.max_width = 200
 c.tabs.title.alignment = "center"
 c.tabs.title.format = "{audio}{current_title}"
 
